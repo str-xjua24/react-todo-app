@@ -1,17 +1,15 @@
 import { useState } from 'react'
 import './styles/task.css'
 
-function Task() {
+function Todo() {
   const todo = {
     name: 'Coding for Technica 2022'
   };
 
-  const [task, setTask] = useState(0)
-
   return (
     <div className='task-container'>
-      <h2>{todo.name}</h2>
-      <button>Delete</button>
+      <p>{todo.name}</p>
+      <button className="delete-btn">Delete</button>
     </div>
   )
 }

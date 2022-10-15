@@ -1,8 +1,22 @@
 .task-container {
   margin: 0 auto;
-  padding: 10px;
+  height: fit-content;
+  width: fit-content;
   display: flex;
   justify-content: space-between;
   background-color: plum;
-  width: 25%;
+  width: 300px;
+}
+
+.task-container button {
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 30px;
+  background-color: rgb(238, 70, 70);
+  border-radius: 3px;
+  border: none;
+}
+
+.task-container button:hover {
+  background-color: rgb(196, 54, 54);
 }

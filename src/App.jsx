@@ -1,16 +1,16 @@
 import { useState } from 'react'
 import './styles/App.css'
-import Task from './Task'
-import TaskForm from './TaskForm'
+import Todo from './Todo'
+import TodoForm from './TodoForm'
 
 function App() {
-  const [task, setTask] = useState(0)
+  const [todos, setTodos] = useState([])
 
   return (
     <div className="App">
       <h1>Todo App</h1>
-      <TaskForm />
-      <Task />
+      <TodoForm />
+      <Todo />
     </div>
   )
 }
