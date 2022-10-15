@@ -1,19 +1,10 @@
-import { useState } from "react";
+import { useState } from 'react';
 import './styles/App.css'
 
-function TodoForm () {
-  const [todo, setTodo] = useState('')
-  const [todos, setTodos] = useState([])
-
-  const addTodo = () => {
-    if (todo != '') {
-      setTodos([...todos, todo])
-      setTodo('')
-    }
-  }
+function TodoForm ({todo, setTodo, addTodo}) {
 
   return (
-    <form>
+    <div>
       <input 
         className='input-wrapper' 
         name='todo-input'
@@ -25,8 +16,8 @@ function TodoForm () {
         }}
       />
       <button className='add-btn' onClick={addTodo}>Add</button>
-    </form>
+    </div>
   )
 }
 
-export default TaskForm
+export default TodoForm

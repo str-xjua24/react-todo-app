@@ -1,4 +1,4 @@
-.task-container {
+.todo-wrapper {
   margin: 0 auto;
   height: fit-content;
   width: fit-content;
@@ -8,7 +8,7 @@
   width: 300px;
 }
 
-.task-container button {
+.todo-wrapper button {
   margin-top: 10px;
   margin-right: 10px;
   height: 30px;
@@ -17,6 +17,6 @@
   border: none;
 }
 
-.task-container button:hover {
+.todo-wrapper button:hover {
   background-color: rgb(196, 54, 54);
 }

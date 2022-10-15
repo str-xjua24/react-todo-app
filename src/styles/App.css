@@ -8,3 +8,7 @@
 body {
   background-color: antiquewhite;
 }
+
+ul > li {
+  list-style: none;
+}

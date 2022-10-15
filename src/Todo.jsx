@@ -1,17 +1,15 @@
 import { useState } from 'react'
-import './styles/task.css'
+import './styles/todo.css'
 
-function Todo() {
-  const todo = {
-    name: 'Coding for Technica 2022'
-  };
+function Todo({todo}) {
 
   return (
-    <div className='task-container'>
-      <p>{todo.name}</p>
+    <div className='todo-wrapper'>
+      <input type="checkbox" />
+      <p>{todo}</p>
       <button className="delete-btn">Delete</button>
     </div>
   )
 }
 
-export default Task
+export default Todo
